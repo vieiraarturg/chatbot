@@ -1,0 +1,32 @@
+{
+  "name": "ai-assistant-web-search",
+  "version": "1.0.0",
+  "description": "AI Assistant with Web Search — browser-based semantic search AI with RAG and Wikipedia fallback",
+  "author": "Artur Vieira",
+  "license": "All Rights Reserved",
+  "private": true,
+  "scripts": {
+    "start": "serve .",
+    "dev": "serve . -l 3000 --cors",
+    "preview": "serve . -l 5000",
+    "build": "echo Static site ready"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "none",
+    "url": ""
+  },
+  "keywords": [
+    "AI",
+    "assistant",
+    "web search",
+    "semantic search",
+    "RAG",
+    "Wikipedia"
+  ]
+}

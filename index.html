@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6501358659144622"
+    crossorigin="anonymous"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J99HZC2LS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3J99HZC2LS');
+  </script>
+  <meta charset="UTF-8" />
+  <title>AI Assistant with Web Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+  <meta name="description"
+    content="Ask questions and get answers using AI with real web search and knowledge retrieval." />
+
+  <meta name="keywords" content="AI assistant, web search AI, research AI, machine learning assistant" />
+
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="AI Assistant with Web Search" />
+  <meta property="og:description"
+    content="Ask questions using AI that can search the web and analyze knowledge datasets." />
+  <meta property="og:type" content="website" />
+  <style>
+    body {
+      font-family: Arial;
+      background: #ffffff;
+    }
+
+    main {
+      padding: 10px;
+      background: #f4f6fb;
+    }
+
+    h1 {
+      color: #2b6ed2;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 10px;
+    }
+
+    #chat {
+      background: white;
+      border-radius: 8px;
+      padding: 9px;
+      height: 297px;
+      overflow: auto;
+    }
+
+    #feed {
+      background: white;
+      border-radius: 8px;
+      padding: 9px;
+      height: 393px;
+      overflow: auto;
+      font-size: 13px;
+    }
+
+    .feedItem {
+      border-left: 3px solid #2b6ed2;
+      padding-left: 8px;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: stretch;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 10px 16px;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+
+    .panel {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    textarea {
+      width: stretch;
+      padding: 10px;
+      margin-top: 8px;
+    }
+
+    #chat .message {
+      max-width: 70%;
+      margin-bottom: 8px;
+      padding: 10px 14px;
+      border-radius: 15px;
+      line-height: 1.4;
+      word-wrap: break-word;
+    }
+
+    #chat .user {
+      background: #2b6ed2;
+      color: white;
+      margin-left: auto;
+      text-align: left;
+      border-bottom-right-radius: 2px;
+    }
+
+    #chat .ai {
+      background: #e2e6f0;
+      color: #111;
+      margin-right: auto;
+      text-align: left;
+      border-bottom-left-radius: 2px;
+    }
+
+    #feed .feedItem {
+      border-left: 3px solid #2b6ed2;
+      padding: 10px;
+      margin-bottom: 8px;
+      border-radius: 10px;
+      background: #f9f9f9;
+    }
+
+    #chat .message {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeIn 0.25s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .feedItem.Instructor {
+      border-left-color: #2b6ed2;
+      color: #1a3d7c;
+    }
+
+    .feedItem.Analyst {
+      border-left-color: #28a745;
+      color: #19692c;
+    }
+
+    .feedItem.Researcher {
+      border-left-color: #6c757d;
+      color: #343a40;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>AI Assistant with Web Search</h1>
+
+    <div class="grid">
+      <div>
+        <div id="chat"></div>
+        <input id="question" aria-label="Ask a question" placeholder="Ask a question" />
+        <button id="askAIAssistantBtn" onclick="ask()">Ask AI Assistant</button>
+      </div>
+
+      <div>
+        <div id="feed"></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Dataset</h2>
+
+      <textarea id="dataset" aria-label="Dataset" rows="10"></textarea>
+
+      <button onclick="saveDataset()">Save Dataset</button>
+      <button onclick="indexDataset()">Index Dataset</button>
+
+      <h3>Status</h3>
+
+      <div id="status">Loading embedding model...</div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+
+  <footer style="margin-top: 40px; font-size: 12px; text-align: center">
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Service</a>
+
+    <p style="margin-top: 8px">
+      Responses are generated automatically and may contain errors.
+    </p>
+  </footer>
+  <script>
+    document.getElementById("askAIAssistantBtn").addEventListener("click", function () {
+      gtag('event', 'ask_ai_assistant_click', {
+        'button_text': 'Ask AI Assistant'
+      });
+    });
+  </script>
+</body>
+
+</html>

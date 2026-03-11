@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Avoid indexing dataset editing interface if hosted
+Disallow: /dataset
+Disallow: /admin
+
+# Allow AI content indexing
+Allow: /index.html
+
+# Crawl delay for politeness
+Crawl-delay: 5
+
+Sitemap: https://https://chatbot-ai-assistant.netlify.app/sitemap.xml
